@@ -7,7 +7,11 @@ import streamlit as st
 # Set the environment variable for Google Cloud credentials
 yasaranglebelearn-db34409d3f0c.json
 #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"D:\ANGLE\python project\yasaranglebelearn-21ef65f2233c.json"
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"yasaranglebelearn-db34409d3f0c.json"
+#os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"yasaranglebelearn-db34409d3f0c.json"
+json_file = "yasaranglebelearn-db34409d3f0c.json"
+
+# Ensure the JSON file exists and is accessible
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = json_file
 
 # Define the scope and credentials for accessing Google Sheets
 scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
