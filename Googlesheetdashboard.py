@@ -1,17 +1,16 @@
 import os
-import gspread  # Corrected import statement
-from oauth2client.service_account import ServiceAccountCredentials
+import gspread
+from google.oauth2.service_account import Credentials
 import pandas as pd
 import streamlit as st
 
 # Set the environment variable for Google Cloud credentials
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "D:\\ANGLE\\python project\\yasaranglebelearn-db34409d3f0c.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"D:\ANGLE\python project\yasaranglebelearn-21ef65f2233c.json"
 
 # Define the scope and credentials for accessing Google Sheets
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'), scope)
+scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
+creds = Credentials.from_service_account_file(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'), scopes=scope)
 client = gspread.authorize(creds)
-
 
 # Access the specific Google Sheets document by its spreadsheet ID
 spreadsheet_id = "1_2rAj3WIYH5dswTwm2SZZwZITS5GoLuBSupLdKQaGrI"  # Replace with your actual spreadsheet ID
@@ -25,10 +24,11 @@ data = worksheet.get_all_values()
 df = pd.DataFrame(data[1:], columns=data[0])  # Skip the header row in the data
 
 # Streamlit App Interface
-st.title("Teacher's Data Dashboard")
+st.title("Google Sheets Data Dashboard")
 
 # Display the DataFrame
-
+st.subheader('Original Data')
+st.write(df)
 
 # Filter the DataFrame
 st.subheader('Filter Data')
