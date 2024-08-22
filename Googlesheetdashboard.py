@@ -1,5 +1,5 @@
 import os
-import gspread
+import gspread  # Corrected import statement
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import streamlit as st
@@ -11,6 +11,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "D:\\ANGLE\\python project\\yasar
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'), scope)
 client = gspread.authorize(creds)
+
 
 # Access the specific Google Sheets document by its spreadsheet ID
 spreadsheet_id = "1_2rAj3WIYH5dswTwm2SZZwZITS5GoLuBSupLdKQaGrI"  # Replace with your actual spreadsheet ID
