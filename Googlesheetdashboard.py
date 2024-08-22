@@ -5,7 +5,9 @@ import pandas as pd
 import streamlit as st
 
 # Set the environment variable for Google Cloud credentials
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"D:\ANGLE\python project\yasaranglebelearn-21ef65f2233c.json"
+yasaranglebelearn-db34409d3f0c.json
+#os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"D:\ANGLE\python project\yasaranglebelearn-21ef65f2233c.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"yasaranglebelearn-db34409d3f0c.json"
 
 # Define the scope and credentials for accessing Google Sheets
 scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
