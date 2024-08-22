@@ -15,7 +15,9 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = json_file
 
 # Define the scope and credentials for accessing Google Sheets
 scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-creds = Credentials.from_service_account_file(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'), scopes=scope)
+#creds = Credentials.from_service_account_file(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'), scopes=scope)
+creds = Credentials.from_service_account_file(json_file, scopes=scope)
+
 client = gspread.authorize(creds)
 
 # Access the specific Google Sheets document by its spreadsheet ID
