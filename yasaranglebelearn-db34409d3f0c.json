@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "yasaranglebelearn",
+  "private_key_id": "db34409d3f0c5bfed7790fe9feb32c5496fe9b5f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCslKhugO6ajFTq\nOOYPAx5KAjxBT+MzktEUdw8XrbP8NX3Q4Th0ohebzfvueGmmz/J0eYmMM2NtqX7Q\nI+g0HPuSYW3nHyDmpr3PXyry49duyw4UZ6YXCh8u0oDSxT+EwWB9kCx4LmZkIdNa\nBvydzBLE/8Oy5CdVcBv/08efakQbbOZl9GysEXYl49BaM2Q2CqDMgvAGihsFYpFN\nD2M63pAPfr6Gye7AmvQCWS/FV5XHGE1rX39UECxiLg2eF2pEpCTOM+kxlVLI9gA9\ns5VV2n9ui3gPXhqrHSwzH+zx8YLFqZzMv7v61isvl6Ls+ZnjyAQTcXpyo0phCksE\ntjLg9oNJAgMBAAECggEAAdV6PQ2022K9M+2jBjWl21VO6hvCTJCValwB2/d40j0y\n8dFe3fXAqKNwTKkDaGYidlnknAnfbIbQpeoSbtwAUV5515WlWMYcqL44ZjMvyB8z\nblnpR3/lnm6sDJv+JY0/gai9TDv5UxGSnczgCiuPvH+s8Z2f4bYgBLXYU8mXi9oL\nLMmo/pZOFWZst1r5Sjhtew9Ggz2wxziqwzpxZF8/vNtgzSAwTTRBAySbLlCrURGb\nW1BGspl9prTin+0eHZVNhpGnz9h5T7o0KPnagbrw6rY/WI7Zu+iqPsgsnEG1dnpW\n5q91XTNZ1T/sPT08dHgcEvH5fHLVjHteepHfniItXQKBgQDcmaVRNOrcx7S8UaVN\nJDbsU1JM4DzV29t/1kV584/y5HfBVpUL8/AxKeU1Y1J4ENtX/8dfLbkVyRzaiumG\nxeE/7uri9jOwEPTQWILO5ItrOQimsOp0o82iqdNQZdOwid1o7MRAvgpFrX7gwkMq\n1DgbaSm2WtG5/UzIfqFFtx6xDQKBgQDIRlmp8Ma3X8YWOlsQOnVP4RhJwaiz3yPi\na2jaLubpWBOVELg0qN4FwVfEvihrCLMbX4mKRwxX7UOPmDigHuEekhWyU+fAHR5c\nRxauo/68W82aNYu17HO4LeOr+yqTZd5CYsaPXb1lDsLl8qnNjKTBCVjqQmc84/Bg\nBdhToNX0LQKBgQCQCv9odB47hWddZA6EvXXjgFCIBA+VMRc1dQsuozxGRKpxowB1\nqpYW9B1HbBBId/FRl6FuY6OsNwLRLM1phEIdhfr3sf10JM5GUNUxFQh4PeiJN5IQ\nEXlPkoZ5w9OjPZJGVfubrrt0XeIwDojfKW1tcJCdEtZJFL2TWSQjKnwu7QKBgHLM\nUI0m5OEr1uHa5WPx/lihUEjG5yrjlzAsHVgjVl0fDWp+wPf+a/Wkk+jEj2p6/B+O\nrcpDW4HzEKz4tkyiJqxdVG55xffLOSHv5cKJYnUZskrYspK/TL2gIEbum8MNu08W\nS3bWZr/MrE8ev9KA8ddswjjVg1PV3G1OLGgTY1CpAoGBAIst3+pwlLVKfzZAdcez\nfJYBi3pU0Wi40CNzicgbvcsBxR2pHTx7gOw8q7ZkfgfXbnqnaIFy0dvWoj18LbhS\nA6ioiyTIiumgYHTIPNxzUXC7IHD84eGmbMDcFBTNk+ZKdgSD2WnyIJkB/BGf75vG\nOeuDZhRNQKdAueZhk7ZiD/OZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "yasaranglebelearn@yasaranglebelearn.iam.gserviceaccount.com",
+  "client_id": "117560964996418738679",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/yasaranglebelearn%40yasaranglebelearn.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
