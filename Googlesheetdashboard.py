@@ -34,8 +34,8 @@ df = pd.DataFrame(data[1:], columns=data[0])  # Skip the header row in the data
 st.title("Google Sheets Data Dashboard")
 
 # Display the DataFrame
-st.subheader('Original Data')
-st.write(df)
+#st.subheader('Original Data')
+#st.write(df)
 
 # Filter the DataFrame
 st.subheader('Filter Data')
