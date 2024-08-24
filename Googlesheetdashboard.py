@@ -1,28 +1,22 @@
-import os
 import gspread
 from google.oauth2.service_account import Credentials
 import pandas as pd
 import streamlit as st
 import json
 
-# Set the environment variable for Google Cloud credentials
-# yasaranglebelearn-db34409d3f0c.json
-#os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"D:\ANGLE\python project\yasaranglebelearn-21ef65f2233c.json"
-#os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"yasaranglebelearn-db34409d3f0c.json"
-json_file = "yasaranglebelearn-21ef65f2233c.json"
-json_data = st.secrets["google_credentials"]["data"]
-parsed_data = json.loads(json_data)
+# Load the credentials from Streamlit secrets
+google_credentials_json = st.secrets["google_credentials"]["data"]
 
-st.write(parsed_data)
-
-# Ensure the JSON file exists and is accessible
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = parsed_data
+# Parse the JSON credentials string into a dictionary
+google_credentials_dict = json.loads(google_credentials_json)
 
 # Define the scope and credentials for accessing Google Sheets
 scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-#creds = Credentials.from_service_account_file(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'), scopes=scope)
-creds = Credentials.from_service_account_file(json_file, scopes=scope)
 
+# Create credentials from the parsed dictionary
+creds = Credentials.from_service_account_info(google_credentials_dict, scopes=scope)
+
+# Authorize the client using the credentials
 client = gspread.authorize(creds)
 
 # Access the specific Google Sheets document by its spreadsheet ID
