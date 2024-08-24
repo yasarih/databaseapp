@@ -31,7 +31,7 @@ data = worksheet.get_all_values()
 df = pd.DataFrame(data[1:], columns=data[0])  # Skip the header row in the data
 
 # Streamlit App Interface
-st.title("Google Sheets Data Dashboard")
+st.title("Teacher's Data Dashboard")
 
 # Display the DataFrame
 #st.subheader('Original Data')
